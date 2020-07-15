@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Customer from './components/Customer';
+import CustomerAdd from './components/CustomerAdd';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import Tablehead from '@material-ui/core/Tablehead';
@@ -53,6 +54,7 @@ class App extends Component {
   render() {
     const { classes } = this.props;
   return (
+    <div>
     <Paper className = {classes.root}>
       <Table className = {classes.table}>
         <Tablehead>
@@ -77,6 +79,8 @@ class App extends Component {
         </Tablebody>
       </Table>
    </Paper>
+   <CustomerAdd/>
+   </div>
   );
   }
 }
