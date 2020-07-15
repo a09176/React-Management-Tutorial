@@ -59,12 +59,12 @@ class App extends Component {
       <Table className = {classes.table}>
         <Tablehead>
           <TableRow>
-          <TableCell>번호</TableCell>
-          <TableCell>이미지</TableCell>
-          <TableCell>이름</TableCell>
-          <TableCell>생년월일</TableCell>
-          <TableCell>성별</TableCell>
-          <TableCell>직업</TableCell>
+          <TableCell align="center">번호</TableCell>
+          <TableCell align="center">이미지</TableCell>
+          <TableCell align="center">이름</TableCell>
+          <TableCell align="center">생년월일</TableCell>
+          <TableCell align="center">성별</TableCell>
+          <TableCell align="center">직업</TableCell>
           </TableRow>
         </Tablehead>
         <Tablebody>
