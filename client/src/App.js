@@ -78,10 +78,11 @@ class App extends Component {
           <TableCell align="center">생년월일</TableCell>
           <TableCell align="center">성별</TableCell>
           <TableCell align="center">직업</TableCell>
+          <TableCell align="center">설정</TableCell>
           </TableRow>
         </Tablehead>
         <Tablebody>
-        {this.state.customers? this.state.customers.map(c => {return (<Customer key = {c.id} id = {c.id}  image={c.image} name={c.name} birthday={c.birthday} gender={c.gender} job={c.job} />);})
+        {this.state.customers? this.state.customers.map(c => {return (<Customer key = {c.id} id = {c.id}  image={c.image} name={c.name} birthday={c.birthday} gender={c.gender} job={c.job} stateRefresh={this.stateRefresh}/>);})
         : 
         <TableRow>
           <TableCell colSpan="6" align="center">
